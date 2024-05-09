@@ -17,7 +17,7 @@ app.get('/hello-world', (req, res) => {
   res.send('hello world')
 })
 
-// // path = GET /users สำหรับ get users ทั้งหมดที่บันทึกเข้าไปออกมา
+// path = GET /users สำหรับ get users ทั้งหมดที่บันทึกเข้าไปออกมา
 // app.get('/attractions', async (req, res) => {
 //   const [results] = await conn.query('SELECT * FROM attractions')
 //   res.json(results)
@@ -29,6 +29,6 @@ app.get('/hello-world', (req, res) => {
 // })
 
 app.listen(port, async () => {
-  await initMySQL()
+  // await initMySQL()
   console.log(`Server running at http://localhost:${port}/`)
 })
